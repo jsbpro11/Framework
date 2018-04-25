@@ -6,6 +6,7 @@ public:
 	CMatrix* victoryImage;
 	CMatrix* loseImage;
 	bool isWin;
+	bool leftMouseClick;
 
 public:
 	CEndingScene(bool isWin);

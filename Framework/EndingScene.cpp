@@ -37,12 +37,16 @@ void  CEndingScene::MsgProc(UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	switch (uMsg)
 	{
+	case WM_LBUTTONDOWN:
+		leftMouseClick = true;
 	case WM_KEYDOWN:
 		switch (wParam)
 		{
 		case VK_RETURN:
 			CEndingScene::~CEndingScene();
 			ChangeScene(0);
+			break;
 		}
+		break;
 	}
 }

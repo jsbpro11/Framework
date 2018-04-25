@@ -6,8 +6,21 @@ public:
 	CMatrix* titleImage;
 	CMatrix* howToImage;
 	CMatrix* rankImage;
+
+	int mouseX;
+	int mouseY;
+	bool leftMouseClicked;
+
 	bool isHowTo;
 	bool isRank;
+	bool isLight;
+
+	RECT mouseRect;
+	RECT startRect;
+	RECT howToRect;
+	RECT rankRect;
+	RECT exitRect;
+	RECT leaveRect;
 
 public:
 	CTitleScene();
